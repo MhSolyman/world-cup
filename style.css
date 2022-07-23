@@ -27,36 +27,55 @@ header {
     overflow: hidden;
     padding-top: 30px;
 }
+.card-text-text{
+    padding-left: 30px;
+    padding-right: 30px;
 
-
-.card-text {
     height: 100%;
-    width: 50%;
-
+    width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+   
     justify-content: center;
 
 }
+
+
+.card-text {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+
+}
+
 
 .card-header h1 {
     font-size: 60px;
     margin-bottom: 30px;
 }
 
-.header-button {
+.header-button button {
     background-color: red;
     margin-top: 30px;
     font-size: 20px;
     color: white;
+    
     padding: 15px 20px;
     border: 0ch;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+
    
 
+}
+.header-button :hover{
+ box-shadow:5px 5px 50px 1px red;
 }
 /* header card button icon*/
 .fa-solid, .fas {
@@ -70,13 +89,14 @@ header {
 
     height: 100%;
     width: 50%;
-    background-color: black;
+    
 
 }
 
 .card-img img {
 
     height: 100%;
+    
 
 }
 
@@ -97,6 +117,7 @@ main{
 
 /*main button card style hear*/
 .button {
+    
     display: flex;
     flex-direction: column;
     width: 200px;
@@ -108,6 +129,7 @@ main{
 }
 
 .button-all {
+
     margin-top: 30px;
     font-size: 20px;
     padding: 15px 20px;
@@ -184,9 +206,27 @@ hr{
     gap:30px;
     margin-top: 60px;
 }
+.footer-icon-link{
+    text-align: center;
+    margin-top: 50px;
+}
+.footer-icon{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+ font-size: 2rem;
+   
+}
+.footer-icon :hover{
+    color: red;
+
+   
+}
+
+
+
 
 /*--------------------------------------------------------------
-                    mobail phone screen only
+                    mobail phone screen 
 -------------------------------------------------------------- */
 @media only screen and (max-width: 600px) {
     header{
@@ -194,17 +234,27 @@ hr{
         
     }
     .card{ 
+        
         align-items: center;
 text-align: center;
        justify-content: center;
         flex-direction: column;
-        height: 100%
+        height: 100%;
+        
     }
     .card h1{
         font-size: 30px;
     }
+    .card-text{
+   
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        justify-content: center;
+    }
+
     .card-img  {
-margin-left: 50px;
+
         height: 100%;
         width: 100%;
     
@@ -220,7 +270,7 @@ margin-left: 50px;
 .button-card{
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    
 }
 .button {
     display: flex;
@@ -228,7 +278,7 @@ margin-left: 50px;
     width: 200px;
     padding: 34px;
     border-radius: 10px;
-    background-color: black;
+    background-color: white;
     margin-bottom: 20px;
     
     
@@ -252,7 +302,155 @@ margin-left: 50px;
   }
 
   }
-  @media only screen and (max-width: 600px){
-    
-  }
+  @media only screen and (min-width: 601px) and (max-width:1250px){
 
+header {
+    color: white;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+   
+}
+
+
+/* header card */
+
+.card {
+    height: 40vh;
+    width: 85%;
+    border-radius: 30px;
+    
+    display: flex;
+    overflow: hidden;
+    padding-top: 30px;
+}
+.card-text-text{
+    padding-left: 30px;
+    padding-right: 8px;
+   
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+
+}
+
+
+.card-text {
+    margin-top: 10%;
+    margin-bottom: 10%;
+   
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+
+}
+
+
+.card-header h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.header-button button {
+    background-color: red;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    
+    padding: 15px 20px;
+    border: 0ch;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+/* header card button icon*/
+.fa-solid, .fas {
+
+    margin: 3px 0 0 15px;
+  }
+  
+
+
+.card-img {
+
+    height: 100%;
+    width: 60%;
+   
+
+}
+
+.card-img img {
+
+    height: 100%;
+    
+
+}
+/* card section */
+main{
+    margin-top: 50px;
+}
+
+.main {
+flex-direction: column;
+align-items: center;
+}
+.button-card{
+justify-content: center;
+align-items: center;
+
+}
+.button {
+display: flex;
+flex-direction: row;
+width: 625px;
+padding: 34px;
+border-radius: 10px;
+background-color:white;
+margin-bottom: 20px;
+align-items: center;
+justify-content: center;
+
+
+}
+.button-all{
+    
+    width: 200px;
+    
+    border-radius: 10px;
+    
+    margin-bottom: 20px;
+    margin-right: 5px;
+
+}
+
+.card-section {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 24px;
+}
+.footer-small-text{
+
+flex-flow: wrap row;
+justify-content: center;
+align-items: center;
+}
+
+.fa-solid, .fas {
+
+margin: 3px 0 0 4px;
+}
+
+}
